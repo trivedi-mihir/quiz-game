@@ -1,97 +1,168 @@
-# 🧠 ProQuiz - Interactive Quiz Management System
+# 🧠 ProQuiz - Full Stack Quiz Management System
 
-A modern and responsive **Quiz Management System** built using **PHP, MySQL, HTML, CSS, and JavaScript**. The application allows users to register, log in, take quizzes with different difficulty levels, track their progress, and view quiz history with an interactive dashboard.
+A modern and responsive **Full Stack Quiz Management System** developed using **PHP, MySQL, HTML, CSS, and JavaScript**.
 
-Example:
+This project is designed for learning full-stack web development and demonstrates how frontend and backend work together in a real-world web application.
 
-* Login Page
-* Quiz Dashboard
-* Quiz Interface
-* Result Screen
-* Quiz History
+---
+
+# 📌 Project Overview
+
+ProQuiz allows users to register, log in, attempt quizzes with different difficulty levels, earn points, view quiz history, and track their performance through an interactive dashboard.
+
+The project includes both the **complete working application** and the **separate frontend source files** to help beginners understand the project structure.
+
+---
+
+# 📂 Repository Structure
+
+```text
+ProQuiz/
+│
+├── quiz.php        → Complete Full Stack Application
+│
+├── quiz.html       → HTML structure only
+├── quiz.css        → CSS styling only
+├── quiz.js         → JavaScript functionality only
+│
+│
+└── README.md
+```
+
+---
+
+# 📖 About the Files
+
+### ✅ quiz.php
+
+This file contains the **complete working project**.
+
+It includes:
+
+* HTML
+* CSS
+* JavaScript
+* PHP
+* Database Connectivity
+
+If you simply want to run the project, use **quiz.php**.
+
+---
+
+### ✅ quiz.html
+
+Contains only the HTML structure of the website.
+
+Useful for:
+
+* Learning HTML
+* Understanding page layout
+* Frontend practice
+
+---
+
+### ✅ quiz.css
+
+Contains only the CSS code.
+
+Useful for:
+
+* Learning styling
+* Understanding responsive design
+* UI customization
+
+---
+
+### ✅ quiz.js
+
+Contains only the JavaScript code.
+
+Useful for:
+
+* Learning DOM manipulation
+* Quiz logic
+* Timers
+* Event handling
+* Interactive features
 
 ---
 
 # ✨ Features
 
-### 👤 User Authentication
+## 👤 Authentication
 
 * User Registration
-* Secure Login System
-* Logout Functionality
+* Secure Login
+* Logout
 * Password Hashing
 * Session Management
 
-### 📝 Quiz Features
+---
+
+## 📝 Quiz System
 
 * Multiple Choice Questions
-* Easy, Medium and Hard Levels
+* Easy / Medium / Hard Levels
 * Random Question Selection
-* Shuffled Questions & Options
+* Shuffle Questions
+* Shuffle Options
 * Timer for Every Question
 * Previous & Next Navigation
-* Lock Answer After Submission
-* Automatic Quiz Completion
+* Answer Locking
+* Automatic Quiz Submission
 
-### 💡 Smart Learning
+---
 
-* Hint System
-* Answer Explanation
-* Point Based Rewards
-* Funny Messages for Low Points
-
-### 📊 Dashboard
+## 📊 Dashboard
 
 * Total Questions
 * Correct Answers
 * Wrong Answers
-* Accuracy Percentage
+* Accuracy
 * Average Time
-* Earned Points
-
-### 📜 History
-
-* Quiz History
-* Previous Scores
-* Difficulty Level Tracking
-* Performance Statistics
-
-### 🎨 User Interface
-
-* Modern Responsive Design
-* Mobile Friendly
-* Interactive Animations
-* Clean Dashboard
-* Beautiful UI
+* Points System
 
 ---
 
-# 🛠️ Technologies Used
+## 💡 Additional Features
 
-## Frontend
+* Hint System
+* Answer Explanation
+* Quiz History
+* Responsive Design
+* Modern User Interface
+* Mobile Friendly
+
+---
+
+# 🛠 Technologies Used
+
+### Frontend
 
 * HTML5
 * CSS3
 * JavaScript
 * Font Awesome
 
-## Backend
+### Backend
 
 * PHP
 
-## Database
+### Database
 
 * MySQL
 
-## Server
+### Server
 
-* XAMPP / Apache
+* Apache (XAMPP)
 
 ---
 
 # ⚙️ Installation
 
-## 1. Clone Repository
+## Step 1
+
+Clone the repository
 
 ```bash
 git clone https://github.com/trivedi-mihir/proquiz.git
@@ -99,9 +170,9 @@ git clone https://github.com/trivedi-mihir/proquiz.git
 
 ---
 
-## 2. Move Project
+## Step 2
 
-Copy the project folder into:
+Move the project folder into
 
 ```text
 xampp/htdocs/
@@ -109,28 +180,30 @@ xampp/htdocs/
 
 ---
 
-## 3. Start XAMPP
+## Step 3
 
-Start:
+Start
 
 * Apache
 * MySQL
 
+using XAMPP.
+
 ---
 
-## 4. Create Database
+## Step 4
 
-Create a database named:
+Create a database named
 
 ```text
 proquiz_db
 ```
 
-Import the SQL file into phpMyAdmin.
+Import the provided SQL file into phpMyAdmin.
 
 ---
 
-## 5. Configure Database
+## Step 5
 
 Open
 
@@ -138,20 +211,13 @@ Open
 quiz.php
 ```
 
-Update database credentials if required.
-
-```php
-$host = "localhost";
-$dbname = "proquiz_db";
-$username = "root";
-$password = "";
-```
+Configure database credentials if required.
 
 ---
 
-## 6. Run Project
+## Step 6
 
-Open your browser.
+Run the project
 
 ```text
 http://localhost/proquiz/
@@ -159,57 +225,15 @@ http://localhost/proquiz/
 
 ---
 
-# 📊 Project Workflow
+# 🎯 Who Can Use This Project?
 
-```text
-User Register/Login
-        │
-        ▼
-Select Difficulty
-        │
-        ▼
-Start Quiz
-        │
-        ▼
-Answer Questions
-        │
-        ▼
-Hints & Timer
-        │
-        ▼
-Score Calculation
-        │
-        ▼
-Quiz Result
-        │
-        ▼
-History Saved
-```
+This repository is useful for:
 
----
-
-# 🔐 Security Features
-
-* Password Hashing
-* Prepared Statements
-* SQL Injection Protection
-* Session Authentication
-* Input Validation
-
----
-
-# 🚀 Future Improvements
-
-* Admin Panel
-* Category-wise Quiz
-* Certificate Generation
-* Leaderboard
-* Dark Mode
-* Email Verification
-* Profile Picture Upload
-* Quiz Analytics
-* Multiplayer Quiz
-* AI Generated Questions
+* Students
+* Beginners learning PHP
+* Web Development Learners
+* College Mini Projects
+* Full Stack Development Practice
 
 ---
 
@@ -217,13 +241,13 @@ History Saved
 
 **Mihir Trivedi**
 
-B.Tech Information Technology Student
+🎓 B.Tech Information Technology Student
 
-Website & Application Developer
+💻 Website & Application Developer
 
 ---
 
-## 🌐 Connect With Me
+# 🌐 Connect With Me
 
 **GitHub**
 
@@ -235,6 +259,8 @@ https://www.linkedin.com/in/mihir-trivediit
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
-If you found this project helpful, don't forget to **Star ⭐ the repository** and follow my GitHub profile for more projects.
+If this project helped you, please consider giving it a **Star ⭐**.
+
+Happy Coding! 🚀
