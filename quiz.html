@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProQuiz - Ultimate Quiz System</title>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- PAGE 1: LOGIN SCREEN                          -->
+<!-- ============================================ -->
+
+<center>
+    <h1>🎓 ProQuiz</h1>
+    <h2>Welcome to ProQuiz</h2>
+    <p>Master your knowledge with interactive quizzes</p>
+
+    <hr />
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <td align="center">
+                <b>Login</b>
+            </td>
+            <td align="center">
+                <b>Register</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <label>Username:</label><br />
+                    <input type="text" name="username" placeholder="Enter username" /><br /><br />
+                    <label>Password:</label><br />
+                    <input type="password" name="password" placeholder="Enter password" /><br /><br />
+                    <input type="submit" value="Login" />
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label>Username:</label><br />
+                    <input type="text" name="username" placeholder="Choose username" /><br /><br />
+                    <label>Email:</label><br />
+                    <input type="email" name="email" placeholder="Enter email (optional)" /><br /><br />
+                    <label>Password:</label><br />
+                    <input type="password" name="password" placeholder="Enter password" /><br /><br />
+                    <label>Confirm Password:</label><br />
+                    <input type="password" name="confirm_password" placeholder="Confirm password" /><br /><br />
+                    <input type="submit" value="Create Account" />
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    <p><b>Demo Credentials:</b> demo_user / admin123</p>
+    <p><b>Features:</b> Multiple Difficulties | Shuffled Questions | Track Progress</p>
+
+    <hr />
+
+    <!-- ============================================ -->
+    <!-- PAGE 2: DASHBOARD & SETUP                   -->
+    <!-- ============================================ -->
+
+    <h2>🧠 ProQuiz · Ultimate</h2>
+    <p><b>User:</b> Alex | <a href="#">Logout</a></p>
+
+    <hr />
+
+    <h3>📋 Quiz Setup</h3>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td><b>Difficulty:</b></td>
+            <td>
+                <select>
+                    <option>All Levels</option>
+                    <option>Easy</option>
+                    <option selected>Medium</option>
+                    <option>Hard</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Questions:</b></td>
+            <td>
+                <select>
+                    <option>5</option>
+                    <option selected>8</option>
+                    <option>10</option>
+                    <option>12</option>
+                    <option>15</option>
+                    <option>20</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Shuffle:</b></td>
+            <td>
+                <select>
+                    <option selected>Yes</option>
+                    <option>No</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button><b>🎯 Start Quiz</b></button>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+
+    <h3>📊 Dashboard</h3>
+    <table border="1" cellpadding="8">
+        <tr>
+            <td>📋 Total: 0</td>
+            <td>✅ Correct: 0</td>
+            <td>❌ Wrong: 0</td>
+            <td>📈 Accuracy: 0%</td>
+        </tr>
+        <tr>
+            <td>🔒 Locked: 0</td>
+            <td>❓ Unanswered: 0</td>
+            <td>⏱️ Avg Time: 0s</td>
+            <td>⭐ Points: 0</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <h3>📜 Your Quiz History</h3>
+    <button><b>Show History</b></button>
+    <br /><br />
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>#</th>
+            <th>Score</th>
+            <th>Percentage</th>
+            <th>Difficulty</th>
+            <th>Points</th>
+            <th>Date</th>
+            <th>Badge</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>6/8</td>
+            <td>75%</td>
+            <td>Medium</td>
+            <td>90</td>
+            <td>25 Jun 2026</td>
+            <td>🌟 Good Job</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>4/8</td>
+            <td>50%</td>
+            <td>Easy</td>
+            <td>60</td>
+            <td>24 Jun 2026</td>
+            <td>📚 Keep Going</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>7/10</td>
+            <td>70%</td>
+            <td>Hard</td>
+            <td>105</td>
+            <td>23 Jun 2026</td>
+            <td>🌟 Good Job</td>
+        </tr>
+        <tr>
+            <td colspan="7" align="center"><i>Showing last 3 quizzes</i></td>
+        </tr>
+    </table>
+
+    <br />
+
+    <h3>📊 Progress</h3>
+    <table border="1" cellpadding="5" width="80%">
+        <tr>
+            <td bgcolor="#e6f0f5">
+                <font color="#1d6b7a"><b>████████████████████████████████████████</b></font>
+                <font color="#e6f0f5"><b>░░░░░░░░░░░░░░░░░░░░░░</b></font>
+                <span><b>50% complete</b></span>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Unanswered: 0</b></td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <!-- ============================================ -->
+    <!-- PAGE 3: QUIZ INTERFACE                      -->
+    <!-- ============================================ -->
+
+    <h3>❓ Quiz Interface</h3>
+    <table border="1" cellpadding="10" width="100%">
+        <tr>
+            <td><b>Q4 / 8</b></td>
+            <td align="right"><b>⏱️ 25s</b></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3>What is the time complexity of binary search?</h3>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button><b>💡 Hint (15 pts)</b></button>
+                <br /><br />
+                <table border="1" cellpadding="10" width="100%">
+                    <tr>
+                        <td><b>A</b> O(n)</td>
+                    </tr>
+                    <tr bgcolor="#d3eaf2">
+                        <td><b>B</b> O(log n) ✅ Selected 🔒</td>
+                    </tr>
+                    <tr>
+                        <td><b>C</b> O(n log n)</td>
+                    </tr>
+                    <tr>
+                        <td><b>D</b> O(1)</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><button><b>◀ Prev</b></button></td>
+            <td align="right"><button><b>Next ▶</b></button></td>
+        </tr>
+    </table>
+
+    <br />
+
+    <!-- ============================================ -->
+    <!-- PAGE 4: HINT & COMEDY MESSAGE              -->
+    <!-- ============================================ -->
+
+    <h3>💡 Hint System</h3>
+    <table border="1" cellpadding="10" width="100%">
+        <tr>
+            <td>
+                <b>What is the time complexity of binary search?</b>
+                <br /><br />
+                <button><b>💡 Hint (15 pts)</b></button>
+                <br /><br />
+                <table border="1" cellpadding="8" bgcolor="#fef9e7">
+                    <tr>
+                        <td>💡 <b>Think about dividing the search space in half each step.</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+
+    <h3>😂 Comedy Message (When no points)</h3>
+    <table border="1" cellpadding="10" width="100%">
+        <tr>
+            <td>
+                <b>What is the time complexity of binary search?</b>
+                <br /><br />
+                <button><b>💡 Hint (15 pts)</b></button>
+                <br /><br />
+                <table border="1" cellpadding="8" bgcolor="#fef0e6">
+                    <tr>
+                        <td>😂 <b>अरे भाई! 15 पॉइंट्स नहीं हैं तो हिंट कैसे लोगे? पहले सवाल तो सही करो!</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+
+    <!-- ============================================ -->
+    <!-- PAGE 5: WRONG ANSWER DESCRIPTION            -->
+    <!-- ============================================ -->
+
+    <h3>❌ Wrong Answer - Description</h3>
+    <table border="1" cellpadding="10" width="100%">
+        <tr>
+            <td>
+                <b>What is the output of typeof null in JS?</b>
+                <br /><br />
+                <table border="1" cellpadding="8" bgcolor="#f0f7fc">
+                    <tr>
+                        <td>❌ <b>In JavaScript, typeof null returns "object" due to a historical bug in the language.</b></td>
+                    </tr>
+                </table>
+                <br />
+                <table border="1" cellpadding="10" width="100%">
+                    <tr>
+                        <td><b>A</b> "null"</td>
+                    </tr>
+                    <tr>
+                        <td><b>B</b> "undefined"</td>
+                    </tr>
+                    <tr bgcolor="#d3eaf2">
+                        <td><b>C</b> "object" ✅ Selected 🔒</td>
+                    </tr>
+                    <tr>
+                        <td><b>D</b> "number"</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <!-- ============================================ -->
+    <!-- PAGE 6: RESULTS & CELEBRATION              -->
+    <!-- ============================================ -->
+
+    <h3>🏆 Results</h3>
+    <table border="1" cellpadding="10" width="100%">
+        <tr bgcolor="#ebf5fa">
+            <td align="center">
+                <h1>⭐ 6/8</h1>
+                <p><b>🌟 Excellent</b> | ⏱️ 14s avg | ⭐ 90 pts</p>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+
+    <h3>📋 Detailed Review</h3>
+    <button><b>🔄 Restart</b></button>
+    <br /><br />
+    <table border="1" cellpadding="8" width="100%">
+        <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th>Status</th>
+            <th>Your Answer</th>
+            <th>Correct Answer</th>
+            <th>Time</th>
+            <th>Hint</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>What is the time complexity of binary search?</td>
+            <td>✅ Correct</td>
+            <td>B</td>
+            <td>B</td>
+            <td>12s</td>
+            <td>No</td>
+        </tr>
+        <tr bgcolor="#fce1e3">
+            <td>2</td>
+            <td>Which is NOT a valid HTTP method?</td>
+            <td>❌ Wrong</td>
+            <td>B</td>
+            <td>C</td>
+            <td>8s</td>
+            <td>💡 Used</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>What does CSS stand for?</td>
+            <td>✅ Correct</td>
+            <td>A</td>
+            <td>A</td>
+            <td>15s</td>
+            <td>No</td>
+        </tr>
+        <tr bgcolor="#fce1e3">
+            <td>4</td>
+            <td>Which data structure uses LIFO?</td>
+            <td>❌ Wrong</td>
+            <td>C</td>
+            <td>B</td>
+            <td>6s</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>What is the output of typeof null?</td>
+            <td>✅ Correct</td>
+            <td>C</td>
+            <td>C</td>
+            <td>8s</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Which sorting algorithm is O(n log n)?</td>
+            <td>✅ Correct</td>
+            <td>B</td>
+            <td>B</td>
+            <td>20s</td>
+            <td>No</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <h3>🎊 Celebration</h3>
+    <table border="1" cellpadding="15" width="100%">
+        <tr>
+            <td align="center" bgcolor="#ffd700">
+                <h1>🎊 🎉 ✨ 🎊 🎉 ✨ 🎊 🎉 ✨</h1>
+                <h2>🎉 Congratulations! 🎉</h2>
+                <p><b>🎊 🎉 ✨ 🎊 🎉 ✨ 🎊 🎉 ✨</b></p>
+            </td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                      -->
+    <!-- ============================================ -->
+
+    <br />
+    <table border="0" width="100%">
+        <tr>
+            <td align="center">
+                <p><b>ProQuiz - Ultimate Quiz System</b></p>
+                <p>🔒 locked answers · 🔀 shuffled options · ⏱️ timer per question · ⭐ +15 pts for correct!</p>
+                <p><i>Made with ❤️ | Version 2.0 | June 2026</i></p>
+            </td>
+        </tr>
+    </table>
+
+</center>
+
+</body>
+</html>
